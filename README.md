@@ -17,3 +17,9 @@ npm start
 ## Live Deployment
 
 [View the application on Render](https://https://f26pro20adapa.onrender.com/)
+
+## Resource Class: Universities
+
+- name: String
+- location: String
+- studentCount: Number
