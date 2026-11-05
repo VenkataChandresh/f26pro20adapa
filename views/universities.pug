@@ -26,8 +26,13 @@ block content
 
   div.container-fluid
     div.row
-      each university in results
-        div.col-sm-2
+      each university, index in results
+        div.col-sm-2(onclick=`buy(${index})`, style="cursor: pointer;")
           p Name: #{university.name}
           p Location: #{university.location}
           p Students: #{university.studentCount}
+
+  script.
+    function buy(index) {
+      alert(`You purchased item ${index}`);
+    }
